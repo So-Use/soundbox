@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Useless Sound Box</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107262369-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107262369-1');
+    </script>
+  </head>
+  <body>
+    <div class="page-header">
+      <h1><a href="/" title="Accueil"><span>Useless</span></br>Sound Box</a></h1>
+    </div>
+    <audio id="philippe" onended="onEnded('philippe')">
+      <source src="sounds/philippe.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="motus" onended="onEnded('motus')">
+      <source src="sounds/motus.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="jeanne" onended="onEnded('jeanne')">
+      <source src="sounds/jeanne.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="rouquin" onended="onEnded('rouquin')">
+      <source src="sounds/rouquin.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="ah" onended="onEnded('ah')">
+      <source src="sounds/ah.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="baptiste" onended="onEnded('baptiste')">
+      <source src="sounds/baptiste.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="cafard" onended="onEnded('cafard')">
+      <source src="sounds/cafard.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="souffrir" onended="onEnded('souffrir')">
+      <source src="sounds/souffrir.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="universal" onended="onEnded('universal')">
+      <source src="sounds/universal.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="centuryfox" onended="onEnded('centuryfox')">
+      <source src="sounds/centuryfox.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="jonathan" onended="onEnded('jonathan')">
+      <source src="sounds/jonathan.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="countdown" onended="onEnded('countdown')">
+      <source src="sounds/countdown.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="allezviens" onended="onEnded('allezviens')">
+      <source src="sounds/allezviens.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="sancowl" onended="onEnded('sancowl')">
+      <source src="sounds/sancowl.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="venere" onended="onEnded('venere')">
+      <source src="sounds/venere.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="vedette" onended="onEnded('vedette')">
+      <source src="sounds/vedette.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="perlimpinpin" onended="onEnded('perlimpinpin')">
+      <source src="sounds/perlimpinpin.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="terrainmine" onended="onEnded('terrainmine')">
+      <source src="sounds/terrainmine.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="bonbons" onended="onEnded('bonbons')">
+      <source src="sounds/bonbons.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="partouzeurs" onended="onEnded('partouzeurs')">
+      <source src="sounds/partouzeurs.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="gladiateurs" onended="onEnded('gladiateurs')">
+      <source src="sounds/gladiateurs.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="monsieurtoutnu" onended="onEnded('monsieurtoutnu')">
+      <source src="sounds/monsieurtoutnu.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="plataoplomo" onended="onEnded('plataoplomo')">
+      <source src="sounds/plataoplomo.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="odile" onended="onEnded('odile')">
+      <source src="sounds/odile.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="shallnotpass" onended="onEnded('shallnotpass')">
+      <source src="sounds/shallnotpass.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="bitch" onended="onEnded('bitch')">
+      <source src="sounds/bitch.mp3" type="audio/mpeg" />
+    </audio>
+  
+    <div class="useless-sound-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-philippe" type="button" class="btn btn-player" onclick="launchSound('philippe')">
+                <i id="icon-play-philippe" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-philippe" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/philippe.jpg" alt="PHILIPPE"/>
+                <p>Philippe ! Enculé !</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-motus" type="button" class="btn btn-player" onclick="launchSound('motus')">
+                <i id="icon-play-motus" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-motus" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/motus.jpg" alt="MOTUS"/>
+                <p>Mo Mo Motus !</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-jeanne" type="button" class="btn btn-player" onclick="launchSound('jeanne')">
+                <i id="icon-play-jeanne" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-jeanne" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/jeanne.jpg" alt="JEANNE"/>
+                <p>Jeanne, au secours</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-rouquin" type="button" class="btn btn-player" onclick="launchSound('rouquin')">
+                <i id="icon-play-rouquin" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-rouquin" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/rouquin.jpg" alt="ROUQUIN"/>
+                <p>Rouquin, PD</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-ah" type="button" class="btn btn-player" onclick="launchSound('ah')">
+                <i id="icon-play-ah" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-ah" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/ah.jpg" alt="AH"/>
+                <p>Ah !</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-souffrir" type="button" class="btn btn-player" onclick="launchSound('souffrir')">
+                <i id="icon-play-souffrir" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-souffrir" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/souffrir.jpg" alt="SOUFFRIR"/>
+                <p>J'suis pas venue ici ...</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-cafard" type="button" class="btn btn-player" onclick="launchSound('cafard')">
+                <i id="icon-play-cafard" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-cafard" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/cafard.jpg" alt="CAFARD"/>
+                <p>Cafaaaard !</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-universal" type="button" class="btn btn-player" onclick="launchSound('universal')">
+                <i id="icon-play-universal" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-universal" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/universal.jpg" alt="UNIVERSAL"/>
+                <p>Universal</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-baptiste" type="button" class="btn btn-player" onclick="launchSound('baptiste')">
+                <i id="icon-play-baptiste" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-baptiste" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/baptiste.jpg" alt="BAPTISTE"/>
+                <p>Baptiste</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-centuryfox" type="button" class="btn btn-player" onclick="launchSound('centuryfox')">
+                <i id="icon-play-centuryfox" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-centuryfox" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/centuryfox.jpg" alt="CENTURYFOX"/>
+                <p>Century Fox</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-jonathan" type="button" class="btn btn-player" onclick="launchSound('jonathan')">
+                <i id="icon-play-jonathan" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-jonathan" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/jonathan.jpg" alt="JONATHAN"/>
+                <p>Jonathan</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-countdown" type="button" class="btn btn-player" onclick="launchSound('countdown')">
+                <i id="icon-play-countdown" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-countdown" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/countdown.jpg" alt="THE FINAL COUNTDOWN"/>
+                <p>The Final Countdown</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-allezviens" type="button" class="btn btn-player" onclick="launchSound('allezviens')">
+                <i id="icon-play-allezviens" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-allezviens" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/allezviens.jpg" alt="ALLEZ VIENS"/>
+                <p>Allez viens</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-sancowl" type="button" class="btn btn-player" onclick="launchSound('sancowl')">
+                <i id="icon-play-sancowl" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-sancowl" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/sancowl.jpg" alt="JM SANCOWL"/>
+                <p>C'est pas possible</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-venere" type="button" class="btn btn-player" onclick="launchSound('venere')">
+                <i id="icon-play-venere" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-venere" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/venere.jpg" alt="VÉNÈRE"/>
+                <p>Ça m'vénère</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-vedette" type="button" class="btn btn-player" onclick="launchSound('vedette')">
+                <i id="icon-play-vedette" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-vedette" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/vedette.jpg" alt="VEDETTE"/>
+                <p>Comme un aigle</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-perlimpinpin" type="button" class="btn btn-player" onclick="launchSound('perlimpinpin')">
+                <i id="icon-play-perlimpinpin" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-perlimpinpin" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/perlimpinpin.jpg" alt="PERLIMPINPIN"/>
+                <p>Perlimpinpin</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-terrainmine" type="button" class="btn btn-player" onclick="launchSound('terrainmine')">
+                <i id="icon-play-terrainmine" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-terrainmine" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/terrainmine.jpg" alt="TERRAINMINE"/>
+                <p>Terrain Miné</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-bonbons" type="button" class="btn btn-player" onclick="launchSound('bonbons')">
+                <i id="icon-play-bonbons" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-bonbons" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/bonbons.jpg" alt="BONBONS"/>
+                <p>Bonbons</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-partouzeurs" type="button" class="btn btn-player" onclick="launchSound('partouzeurs')">
+                <i id="icon-play-partouzeurs" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-partouzeurs" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/partouzeurs.jpg" alt="PARTOUZEURS"/>
+                <p>Partouzeurs de droite</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-gladiateurs" type="button" class="btn btn-player" onclick="launchSound('gladiateurs')">
+                <i id="icon-play-gladiateurs" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-gladiateurs" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/gladiateurs.jpg" alt="GLADIATEURS"/>
+                <p>Gladiateurs</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-monsieurtoutnu" type="button" class="btn btn-player" onclick="launchSound('monsieurtoutnu')">
+                <i id="icon-play-monsieurtoutnu" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-monsieurtoutnu" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/monsieurtoutnu.jpg" alt="MONSIEURTOUTNU"/>
+                <p>Monsieur tout nu</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-plataoplomo" type="button" class="btn btn-player" onclick="launchSound('plataoplomo')">
+                <i id="icon-play-plataoplomo" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-plataoplomo" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/plataoplomo.jpg" alt="PLATA O PLOMO"/>
+                <p>Plata o Plomo</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-odile" type="button" class="btn btn-player" onclick="launchSound('odile')">
+                <i id="icon-play-odile" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-odile" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/odile.jpg" alt="ODILE"/>
+                <p>Odile</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-shallnotpass" type="button" class="btn btn-player" onclick="launchSound('shallnotpass')">
+                <i id="icon-play-shallnotpass" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-shallnotpass" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/shallnotpass.jpg" alt="SHALL NOT PASS"/>
+                <p>Shall not pass</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="btn-container">
+              <button id="btn-play-bitch" type="button" class="btn btn-player" onclick="launchSound('bitch')">
+                <i id="icon-play-bitch" class="fa fa-play" aria-hidden="true"></i>
+                <i id="icon-playing-bitch" class="fa fa-music" style="display: none;" aria-hidden="true"></i>
+                <img src="images/bitch.png" alt="Bitch"/>
+                <p>Bitch</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <a href="credits.html" title="Credits">Credits</a> | <a href="stats.html" title="Stats">Stats</a>
+      </footer>
+    </div>
+
+    <script>
+      var playing = false
+      var playingId = null
+
+      var onEnded = function(id) {
+        console.log('Sound ended: ' + id)
+        document.getElementById('btn-play-' + id).className = 'btn btn-player';
+        document.getElementById('icon-playing-' + id).style.display = 'none';
+        document.getElementById('icon-play-' + id).style.display = 'inline';
+        playing = false
+      }
+
+      var trackSound = function(id) {
+        fetch('/api/track/play_sound/' + id, {method: 'POST'})
+        .then(response => console.log(id + ' tracked!'))
+        .catch(error => console.error(error))
+      }
+
+      launchSound = function(id) {
+        var audio = document.getElementById(id)
+        if (audio) {
+          if (playing) {
+            console.log('Another sound is playing: ' + playingId)
+            var playingAudio = document.getElementById(playingId)
+            document.getElementById('btn-play-' + playingId).className = 'btn btn-player';
+            document.getElementById('icon-playing-' + playingId).style.display = 'none';
+            document.getElementById('icon-play-' + playingId).style.display = 'inline';
+            playingAudio.pause()
+            playingAudio.currentTime = 0;
+            if (id !== playingId) {
+              playingId = id
+              document.getElementById('btn-play-' + id).className = 'btn btn-player btn-active';
+              document.getElementById('icon-play-' + id).style.display = 'none';
+              document.getElementById('icon-playing-' + id).style.display = 'inline';
+              audio.play()
+              trackSound(id)
+            } else {
+              playing = false
+            }
+          } else {
+            console.log('Playing sound: ' + id)
+            playing = true
+            playingId = id
+            document.getElementById('btn-play-' + id).className = 'btn btn-player btn-active';
+            document.getElementById('icon-play-' + id).style.display = 'none';
+            document.getElementById('icon-playing-' + id).style.display = 'inline';
+            trackSound(id)
+            audio.play()
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
