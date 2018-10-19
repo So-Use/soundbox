@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Useless SoundBox",
   "main": "index.js",
-  "repository": "https://github.com/sebprunier/useless-soundbox.git",
-  "author": "Sébastien Prunier",
+  "repository": "https://github.com/So-Use/soundbox.git",
+  "author": "SoUse Dev Team",
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.4",
-    "redis": "^2.8.0",
-    "socket.io": "^2.0.3"
+    "redis": "^2.8.0"
   },
   "scripts": {
     "start": "node index.js"

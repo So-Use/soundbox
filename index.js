@@ -2,10 +2,8 @@ const express = require('express')
 const app = express()
 
 const server = require('http').Server(app)
-const io = require('socket.io')(server)
 
 const PORT = process.env.PORT || 3000
-const SOCKETIO_URI = process.env.SOCKETIO_URI || `http://localhost:${PORT}`
 
 const REDIS_URL = process.env.REDIS_URL
 console.log(`REDIS_URL is ${REDIS_URL}`)
@@ -27,12 +25,6 @@ const trackSound = (soundId) => {
 }
 
 app.use(express.static('public'))
-
-app.get('/api/config', (req, res) => {
-  res.json({
-    socketioUri: SOCKETIO_URI
-  })
-})
 
 app.post('/api/track/play_sound/:id', (req, res) => {
   const soundId = req.params.id
@@ -63,17 +55,5 @@ app.get('/api/stats', (req, res) => {
     res.status(503).send('Service Unavailable')
   }
 })
-
-app.get('/api/play_sound/:id', (req, res) => {
-  const soundId = req.params.id
-  console.log(`Sending event to play sound: ${soundId}`)
-  io.emit('play_sound', { id: soundId })
-  trackSound(soundId)
-  res.status(201).send()
-})
-
-io.on('connection', (socket) => {
-  console.log('sockect.io connected')
-});
 
 server.listen(PORT, () => console.log(`Useless SoundBox listening on port ${PORT}`))
